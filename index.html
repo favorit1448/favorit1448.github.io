@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>фаворит</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <video class="player" loop hidden></video>
+        <button class="button" role="button">прикол</button>
+        <div class="cont">target: ГОРЕ РЕБЕНОК<br>Кирилл Халитов (Кирилл Орлов Константинович) 13.12.2006<br>np:79026373051<br>Main name: Халитов aka lurwez (nn yeP)<br>old names (WWWWWWWWWWWWWWWW):imty4ka4sv;bestfall.<br>address:russia, p3rm kr4i, berezniki , mira yl, D. 120, Kv. 94<br>снилс:14##178##91<br>паспорт:########<br>инн:############<br>vk(old) - https://vk.com/id338612474<br>vk - https://vk.com/babyhilwex<br>R.G.T (?)<br>꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷<br>target: !! (МАМА) !!<br>ААААААААААААА ПЬЯННИЦА ЕБАНАЯ<br>орлова(бабина ЫХЫХХЫ) анна аналтольвена) 19.01.1988<br>паспорт 57######15<br>инн 59##1430##00<br>снилс 1#2##460##1<br>долг: 55797(WWWWWWWWW, scammer yep?)<br>vk - https://vk.com/id535108468<br>np: (ЗАБЫЛ) +79922175260<br>꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷<br>target:  !! батек) !!<br>vk - https://vk.com/id357357088<br>np - +79082771179<br>ИНН - 59##1152##23<br>СНИЛС - 0##60##1652<br>ПАСПОРТ - ###3######<br>target: !! (родственники) !!<br>!!!!!!!!!!!!!Заовражных Лариса Викторовна!!!!!!!!!!!!! - 591105659259(инн), 03269551055(снилс), паспорт - 5704042563, федеральный розыск в 2004<br>!!!!!!!!!!!!!Занина Раиса Фатыховна!!!!!!!!!!!!! - успешно проебала суд в 21.04.2014.<br>!!!!!!!!!!!!!Орлова Тамара Борисовна!!!!!!!!!!!!! - ###106###607 инн, ###80###000 снилс, паспорт ##########<br>!!!!!!!!!!!!!Лоскутов Антон Сергеевич!!!!!!!!!!!!! - snils 1##964##5##, inn ############, pasport ###88###7 МАОУ"СОШ с УИОП №3(WTF)</div>
+
+        <script>
+            const player = document.getElementsByClassName('player')[0],
+                button = document.getElementsByClassName('button')[0],
+                container = document.getElementsByClassName('cont')[0],
+
+                videos = ['slonex', 'morgen', 'kraken']
+
+            player.src = `${videos[Math.floor(Math.random() * videos.length)]}.mp4`
+
+            const play = () => {
+                button.style.display = 'none'
+                player.hidden = 0
+                player.play()
+
+                setTimeout(() => {
+                    container.style.display = 'inline-block'
+                    
+                    let int = setInterval(() => {
+                        container.style.opacity = Number(container.style.opacity) + .01
+
+                        if (container.style.opacity === '1')
+                            clearInterval(int)
+                    }, 1)
+                }, 1000)
+            }
+
+            button.onclick = play
+        </script>
+    </body>
+</html>
